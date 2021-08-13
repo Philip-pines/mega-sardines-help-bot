@@ -11,11 +11,11 @@ group_cancel = CHAT_ID
 
 try:
     db = mysql.connector.connect(
-        host="localhost",
+        host="host",
         user="root",
-        password="Oujobombita",
+        password="password",
         port="3306",
-        database="dbbot"
+        database="database"
 )
 except mysql.connector.Error as err:
   if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
