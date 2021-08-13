@@ -5,9 +5,9 @@ from mysql.connector import errorcode
 from telebot import types
 from datetime import datetime
 
-bot = telebot.TeleBot("1793723978:AAGfCaUVyD86NV2d91nfxpzfhy_L-cteDV8")
-group_resv = -1001185634802
-group_cancel = -1001185634802
+bot = telebot.TeleBot("TOKEN")
+group_resv = CHAT_ID
+group_cancel = CHAT_ID
 
 #  "id": -1001185634802,
 #             "title": "TAL MEAL RESERVATION",
