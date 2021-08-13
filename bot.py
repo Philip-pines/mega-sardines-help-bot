@@ -65,7 +65,7 @@ cursor = db.cursor()
 # cursor.execute("ALTER TABLE customers ADD COLUMN (id INT AUTO_INCREMENT PRIMARY KEY, user_id INT UNIQUE)")
 
 #sql = "INSERT INTO customers (first_name, last_name, user_id) VALUES (%s, %s, %s)"
-#val = ("Philip", "Labitad", 3210008)
+#val = ("firstName", "lastName", 3210008)
 #cursor.execute(sql, val)
 #db.commit()
 
@@ -86,7 +86,7 @@ cursor = db.cursor()
 ################### JOINING ###################################
 #cursor.execute("CREATE TABLE user_groups (id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255))")
 #sql = "INSERT INTO user_groups (title) VALUES (%s)"
-#val = [("Jelly", ), ("Bombita", ), ("Cutie", )]
+#val = [("Bob", ), ("Builder", ), ("yo", )]
 #cursor.executemany(sql, val)
 #db.commit()
 
