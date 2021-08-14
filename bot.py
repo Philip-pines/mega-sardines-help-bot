@@ -43,6 +43,15 @@ class User:
         self.cancel = ''
         self.claim = ''
         self.no = ''
+        
+@bot.message_handler(commands=['today'])
+def today(message):
+    try:
+        cursor.execute("SELECT first_name FROM dbbot.mealresv WHERE date_time >= CURDATE()")
+        for x in cursor:
+            bot.reply_to(message, x)
+    except Exception as e:
+        bot.reply_to(message, 'oooops')
 
 @bot.message_handler(commands=['no'])
 def no(message):
