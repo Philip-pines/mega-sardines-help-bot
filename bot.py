@@ -14,7 +14,7 @@ try:
         host="host",
         user="root",
         password="password",
-        port="3306",
+        port="<PORT>",
         database="database"
 )
 except mysql.connector.Error as err:
